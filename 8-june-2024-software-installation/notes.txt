@@ -1,0 +1,5 @@
+Software Installation:
+1.Editor - visual studio code 
+2.node https://nodejs.org/en/download/package-manager
+node-version:21.6.1
+
