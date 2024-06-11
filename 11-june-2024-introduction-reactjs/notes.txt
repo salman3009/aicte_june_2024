@@ -1,0 +1,24 @@
+what is nodejs?
+Frontend:
+html+css+javascript 
+Library or framework:
+Angularjs 
+angular 
+reactjs - trending 
+vuejs 
+babel - high level to low level 
+webpack - compressed 
+nodejs -> compiler of javascript 
+===============================
+reactjs 
+//Inside the react we have one module name called react-scripts 
+//It will convert high level code to low level code and given to browser.
+======================================
+Reactjs:
+1.SPA - (Single page application)
+2.axios package - get,post,delete, headers,interceptors
+3.Virtual DOM 
+DOM - Document object Modal 
+//copy of original DOM is called virtual DOM
+===============================================
+Setup reactjs in our system:
