@@ -1,0 +1,12 @@
+official website:
+https://create-react-app.dev/docs/getting-started/
+
+
+Installation of nodejs 
+1.nodejs 
+2.npm - node package manager
+cmd:npm -v
+
+npx - it will install latest version of reactjs
+Setups of Reactjs 
+cmd:npx create-react-app first-aicte-app
