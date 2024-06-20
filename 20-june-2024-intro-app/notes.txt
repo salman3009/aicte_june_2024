@@ -1,0 +1,24 @@
+React App: npm approach
+1.node_modules 
+//inbuild packages codes is available here
+//npm install
+2.package.json 
+configuration file 
+//start 
+//build 
+//packages available 
+cmd:npm run start or npm start 
+cmd:npm run build 
+cmd:npm run test 
+To run react 
+//react
+//react-dom
+react-scripts
+//it will take care of babel(high level into low level) 
+and webpack(compressed) configuration
+webpack - (hot-reloading)
+3.package-lock.json
+//package version will be locked here
+4.gitignore
+5.public
+6.src 
