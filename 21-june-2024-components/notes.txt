@@ -1,0 +1,15 @@
+creating functional components 
+1.components is nothing but a function 
+2.create one file with capital letter example:App.js 
+3.components return keyword mandatory
+4.react is returning jsx(javascript extension)
+example:
+const App = ()=>{
+    return <div>Hello world</div>
+}
+export default App;
+
+index.js 
+import App from './App';
+root.render(<App/>);
+
