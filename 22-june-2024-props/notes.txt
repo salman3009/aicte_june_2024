@@ -1,0 +1,6 @@
+props:
+//props is nothing but a parameter inside the function.
+example:
+funcation addition(a,b){
+    return a+b;
+}

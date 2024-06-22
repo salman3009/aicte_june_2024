@@ -1,0 +1,15 @@
+.box{
+    width: 400px;
+    height: 400px;
+    padding:20px;
+    border: 2px solid black;
+}
+
+.align-text{
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
