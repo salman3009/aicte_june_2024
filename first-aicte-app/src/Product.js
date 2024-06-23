@@ -13,7 +13,6 @@ const Product=(props)=>{
         <h1 className='align-text'>{props.name}</h1>
         <img src={require(`${props.image}`)}/>
         <h2 className='align-text' style={props.price>=3000?{color:"red"}:{color:"blue"}} >{props.price}</h2>
-        {props.price>4000 && props.name == "mi2" && <h1>Offer is available</h1>}
     </div>)
 
 }
