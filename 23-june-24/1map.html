@@ -1,0 +1,21 @@
+<script>
+        const list=[
+        {
+            name:"mi1",
+            price:2000,
+            image:'./assets/mi1.png'
+        },{
+            name:"mi2",
+            price:4000,
+            image:'./assets/mi2.png' 
+        }
+    ]
+    let result = list.map((obj)=>{
+        return {
+            fullName:obj.name,
+            price:obj.price
+        }
+    });
+
+    console.log(result);
+</script>
