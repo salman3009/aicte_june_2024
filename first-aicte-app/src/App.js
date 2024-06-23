@@ -42,8 +42,9 @@ const App = ()=>{
     ]
      
     return (<div style={{display:"flex",flexWrap:'wrap'}}>
-            {list.map((obj)=>{
-                 return(<div>
+            {list.map((obj,index)=>{
+                 return(<div key={index}>
+                    <h1>{index}</h1>
                     <Product
                      name={obj.name}
                      price={obj.price}
