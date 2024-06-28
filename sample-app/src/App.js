@@ -4,26 +4,48 @@ import { useState } from 'react';
 
 function App() {
 
-   const [getEmail,setEmail] = useState('');
-   const [getPassword,setPassword] = useState('');
+  const [getEmail, setEmail] = useState('');
+  const [getPassword, setPassword] = useState('');
+  const [getError, setError] = useState('');
 
-   const onChangeHandler=(event)=>{
-    if(event.target.name == "emailDetails"){
+  const onChangeHandler = (event) => {
+    if (event.target.name == "emailDetails") {
       setEmail(event.target.value);
     }
-    if(event.target.name == "passwordDetails"){
+    if (event.target.name == "passwordDetails") {
       setPassword(event.target.value);
     }
-   
-   }
 
-   const onSubmitHandler=(event)=>{
+  }
+
+  const onSubmitHandler = (event) => {
     event.preventDefault();
-    console.log(getEmail,getPassword);
-   }
+    setError('');
+    if (!getEmail) {
+      setError("email cannot be empty");
+      return;
+    }
+    if (!getPassword) {
+      setError("password cannot be empty");
+      return;
+    }
+    if(!(/^[a-zA-Z0-9]{3,15}$/.test(getPassword))){
+      setError('validation for password regex failed');
+      return;
+    }
+    
+    
+  }
 
   return (
     <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+          {getError && <div class="alert alert-danger" style={{textAlign:'center'}} role="alert">
+            {getError}
+          </div>}
+        </div>
+      </div>
       <div className="row">
         <div className="col-md-4">
         </div>
@@ -31,7 +53,7 @@ function App() {
           <form>
             <div className="form-group">
               <label htmlFor="emailDetails">Email address</label>
-              <input type="email" className="form-control" id="emailDetails" name="emailDetails" onChange={onChangeHandler} />
+              <input type="text" className="form-control" id="emailDetails" name="emailDetails" onChange={onChangeHandler} />
             </div>
             <div className="form-group">
               <label htmlFor="passwordDetails">Password</label>
@@ -41,7 +63,7 @@ function App() {
           </form>
         </div>
         <div className="col-md-4">
-           
+
         </div>
       </div>
 
