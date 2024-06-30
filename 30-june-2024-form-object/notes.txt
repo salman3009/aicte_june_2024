@@ -1,0 +1,19 @@
+React routing setup:
+1.first create components 
+example:
+
+
+
+
+function Dashboard(){
+
+    return (<div>
+        <h1>Dashboard component</h1>
+    </div>)
+}
+
+export default Dashboard;
+
+2.install the routing package 
+npm install react-router-dom 
+
