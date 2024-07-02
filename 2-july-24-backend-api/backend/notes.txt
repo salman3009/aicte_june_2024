@@ -1,0 +1,4 @@
+creating package.json 
+npm init
+start command
+npx json-server db.json
