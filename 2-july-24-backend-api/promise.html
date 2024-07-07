@@ -1,0 +1,18 @@
+<script>
+    function initial(){
+        return new Promise((success,failure)=>{
+            setTimeout(()=>{
+                success("akash");
+            },3000)
+              
+        })
+    }
+
+    initial().then((result)=>{
+         console.log(result);
+    })
+
+  
+
+    console.log("aicte");
+</script>

@@ -1,0 +1,30 @@
+register component 
+
+   let obj={
+    username:"salman44",
+    password:"12345"
+   }
+   axios.post('http://localhost:3000/registration',obj).then((result) => {
+            navigate('/login');
+        })
+
+login component 
+   let obj ={
+    username:'123',
+    passowrd:"133"
+   }
+   axios.get('http://localhost:3000/registration').then((result) => {
+            let data = result.data;
+            for(let i=0;i<data.length;i++){
+                if(data[i].username!=username && data[i].password!=password ){
+                     alert("data not found");
+                     return
+                }
+            }
+              alert("success");
+              navigate('/login');
+              sessionStorage("login",true);
+        })
+
+logout button 
+map list = liked icons after login 
