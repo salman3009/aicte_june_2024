@@ -1,0 +1,14 @@
+useState - local state 
+redux - central state 
+
+Actions 
+Reducers 
+Store 
+
+Dispatcher 
+useSelector 
+
+
+package name:
+react-redux 
+@reduxjs/toolkit
