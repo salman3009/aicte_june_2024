@@ -6,3 +6,12 @@ export const fetchDataSuccess = (data) => {
      }
 
 }
+
+
+export const apiDataRequest = (data) => {
+     return {
+          type: "API_DATA_REQUEST",
+          payload: data
+     }
+
+}

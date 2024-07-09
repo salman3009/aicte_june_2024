@@ -2,11 +2,11 @@ useState - local state
 redux - central state 
 
 Actions 
-Reducers 
-Store 
+Reducers - local state
+Store  - global state
 
-Dispatcher 
-useSelector 
+Dispatcher - actions - reducer - store - useSelector
+ 
 
 
 package name:
