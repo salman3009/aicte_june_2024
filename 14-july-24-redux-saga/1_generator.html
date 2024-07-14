@@ -1,0 +1,23 @@
+<script>
+    //es6
+    //pause 
+    //execute
+    //multiple values you can return
+    function* display(){
+
+        yield 40;
+
+        yield 60;
+
+        yield "aicte";
+    }
+
+    let gen = display();
+    console.log(gen.next().value);
+    console.log(gen.next().value);
+    function supers(){
+      console.log("supers")
+    }
+    supers();
+    console.log(gen.next().value);
+</script>
